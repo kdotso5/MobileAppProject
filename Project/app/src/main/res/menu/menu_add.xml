@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.dotsoninc.kendrardotsonandroidapp.Home">
+
+    <item android:id="@+id/go_back"
+        android:title="@string/action_back"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/go_home"
+        android:title="@string/action_home"
+        app:showAsAction="never"/>
+
+
+</menu>

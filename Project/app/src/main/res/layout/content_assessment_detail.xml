@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="@dimen/fab_margin"
+    tools:context=".AssessmentDetail"
+    tools:showIn="@layout/activity_assessment_detail">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:paddingBottom="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/type_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/assess_type_label"
+        android:textSize="22sp"
+        android:paddingBottom="15dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintRight_toLeftOf="@id/type"
+        app:layout_constraintTop_toBottomOf="@id/title"/>
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:paddingBottom="15dp"
+        app:layout_constraintStart_toEndOf="@id/type_label"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+        android:id="@+id/due_date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/due_date_label"
+        android:textSize="22sp"
+        android:paddingBottom="15dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintRight_toLeftOf="@id/due_date"
+        app:layout_constraintTop_toBottomOf="@id/type"/>
+
+    <TextView
+        android:id="@+id/due_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:paddingBottom="15dp"
+        app:layout_constraintStart_toEndOf="@id/due_date_label"
+        app:layout_constraintTop_toBottomOf="@id/type" />
+
+    <TextView
+        android:id="@+id/goal_alert_status_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/goal_date_alert_status_label"
+        android:textSize="22sp"
+        android:paddingBottom="15dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintRight_toLeftOf="@id/goal_alert_status"
+        app:layout_constraintTop_toBottomOf="@id/due_date"/>
+
+    <TextView
+        android:id="@+id/goal_alert_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:textSize="22sp"
+        app:layout_constraintStart_toEndOf="@id/goal_alert_status_label"
+        app:layout_constraintTop_toBottomOf="@id/due_date" />
+
+
+    <EditText
+        android:id="@+id/edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_title"
+        android:inputType="text"
+        android:paddingBottom="15dp"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Spinner
+        android:id="@+id/edit_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/assess_type"
+        android:paddingBottom="15dp"
+        android:textSize="22dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_title"/>
+
+   <EditText
+        android:id="@+id/edit_due_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_end_date"
+        android:inputType="text"
+        android:paddingBottom="15dp"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_type" />
+
+    <TextView
+        android:id="@+id/edit_goal_alert_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_goal_alert_label"
+        android:textSize="22sp"
+        android:paddingBottom="15dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintRight_toLeftOf="@id/edit_goal_alert"
+        app:layout_constraintTop_toBottomOf="@id/edit_due_date"/>
+
+    <CheckBox
+        android:id="@+id/edit_goal_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edit_due_date"
+        app:layout_constraintStart_toEndOf="@id/edit_goal_alert_label"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/save"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/update"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/edit"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/deleteButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/delete"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editButton" />
+
+    <android.support.constraint.Group
+        android:id="@+id/viewAssess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="title, type, due_date, share, goal_alert_status, type_label, due_date_label, goal_alert_status_label" />
+
+    <android.support.constraint.Group
+        android:id="@+id/editAssess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="edit_title, edit_type, edit_due_date, edit_goal_alert, edit_goal_alert_label" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:paddingBottom="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/start_date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_date_label"
+        android:textSize="22sp"
+        android:paddingBottom="15dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintRight_toLeftOf="@id/start_date"
+        app:layout_constraintTop_toBottomOf="@id/title"/>
+
+    <TextView
+        android:id="@+id/start_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:paddingBottom="15dp"
+        app:layout_constraintStart_toEndOf="@id/start_date_label"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+        android:id="@+id/end_date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/end_date_label"
+        android:textSize="22sp"
+        android:paddingBottom="15dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintRight_toLeftOf="@id/end_date"
+        app:layout_constraintTop_toBottomOf="@id/start_date_label"/>
+
+    <TextView
+        android:id="@+id/end_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:paddingBottom="15dp"
+        app:layout_constraintStart_toEndOf="@id/end_date_label"
+        app:layout_constraintTop_toBottomOf="@id/start_date_label" />
+
+    <TextView
+        android:id="@+id/status_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/status_label"
+        android:textSize="22sp"
+        android:paddingBottom="15dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintRight_toLeftOf="@id/status"
+        app:layout_constraintTop_toBottomOf="@id/end_date_label"/>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:textSize="22sp"
+        app:layout_constraintStart_toEndOf="@id/status_label"
+        app:layout_constraintTop_toBottomOf="@id/end_date_label" />
+
+    <TextView
+        android:id="@+id/share_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/share_label"
+        android:textSize="22sp"
+        android:paddingBottom="15dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintRight_toLeftOf="@id/share"
+        app:layout_constraintTop_toBottomOf="@id/status_label"/>
+
+    <TextView
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:textSize="22sp"
+        app:layout_constraintStart_toEndOf="@id/share_label"
+        app:layout_constraintTop_toBottomOf="@id/status_label" />
+
+    <TextView
+        android:id="@+id/start_alert_status_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_date_alert_status_label"
+        android:textSize="22sp"
+        android:paddingBottom="15dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintRight_toLeftOf="@id/start_alert_status"
+        app:layout_constraintTop_toBottomOf="@id/share_label"/>
+
+    <TextView
+        android:id="@+id/start_alert_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:textSize="22sp"
+        app:layout_constraintStart_toEndOf="@id/start_alert_status_label"
+        app:layout_constraintTop_toBottomOf="@id/share_label" />
+
+    <TextView
+        android:id="@+id/end_alert_status_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/end_date_alert_status_label"
+        android:textSize="22sp"
+        android:paddingBottom="15dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintRight_toLeftOf="@id/end_alert_status"
+        app:layout_constraintTop_toBottomOf="@id/start_alert_status_label"/>
+
+    <TextView
+        android:id="@+id/end_alert_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:textSize="22sp"
+        app:layout_constraintStart_toEndOf="@id/end_alert_status_label"
+        app:layout_constraintTop_toBottomOf="@id/start_alert_status_label" />
+
+
+    <EditText
+        android:id="@+id/edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_title"
+        android:inputType="text"
+        android:paddingBottom="15dp"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_start_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_start_date"
+        android:inputType="text"
+        android:textSize="22sp"
+        android:paddingBottom="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_title" />
+
+    <EditText
+        android:id="@+id/edit_end_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_end_date"
+        android:inputType="text"
+        android:paddingBottom="15dp"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_start_date" />
+
+    <Spinner
+        android:id="@+id/edit_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/status_list"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:textSize="22dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_end_date"/>
+
+    <Spinner
+        android:id="@+id/edit_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/share_list"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:textSize="22dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_status"/>
+
+    <TextView
+        android:id="@+id/edit_start_alert_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_start_alert_label"
+        android:textSize="22sp"
+        android:paddingBottom="15dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintRight_toLeftOf="@id/edit_start_alert"
+        app:layout_constraintTop_toBottomOf="@id/edit_share"/>
+
+    <CheckBox
+        android:id="@+id/edit_start_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edit_share"
+        app:layout_constraintStart_toEndOf="@id/edit_start_alert_label"/>
+
+    <TextView
+        android:id="@+id/edit_end_alert_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_end_alert_label"
+        android:textSize="22sp"
+        android:paddingBottom="15dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintRight_toLeftOf="@id/edit_end_alert"
+        app:layout_constraintTop_toBottomOf="@id/edit_start_alert_label" />
+
+    <CheckBox
+        android:id="@+id/edit_end_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/edit_end_alert_label"
+        app:layout_constraintTop_toBottomOf="@id/edit_start_alert_label" />
+
+
+
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/save"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/update"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/edit"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/mentorButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/mentorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/mentor"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toStartOf="@id/noteButton"
+        app:layout_constraintStart_toEndOf="@id/editButton"/>
+
+    <!--<Button
+        android:id="@+id/mentorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/mentor"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toStartOf="@id/noteButton"
+        app:layout_constraintStart_toEndOf="@id/editButton" />-->
+
+    <Button
+        android:id="@+id/noteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/note"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toStartOf="@id/deleteButton"
+        app:layout_constraintStart_toEndOf="@id/mentorButton" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/delete"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/noteButton" />
+
+
+    <android.support.constraint.Group
+        android:id="@+id/viewCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="title, start_date, end_date, status, share, start_alert_status, end_alert_status, start_date_label, end_date_label, status_label, share_label, start_alert_status_label, end_alert_status_label" />
+
+    <android.support.constraint.Group
+        android:id="@+id/editCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="edit_title, edit_start_date, edit_end_date, edit_status, edit_share, edit_start_alert, edit_start_alert_label, edit_end_alert, edit_end_alert_label" />
+
+
+</android.support.constraint.ConstraintLayout>
+

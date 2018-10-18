@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Western Governors University</string>
+
+    <!--menu items-->
+    <string name="action_add">Add</string>
+    <string name="action_back">Back</string>
+    <string name="action_home">Home</string>
+
+    <!--button text-->
+    <string name="start">Get Started.....</string>
+    <string name="all_courses">Manage Courses</string>
+    <string name="see_assess">View Assessments</string>
+    <string name="see_email">Emails</string>
+    <string name="see_phone">Phones</string>
+    <string name="see_course">View Courses</string>
+    <string name="detail">See Details</string>
+    <string name="add">Add</string>
+    <string name="send">Send</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="mentor">Mentors</string>
+    <string name="note">Notes</string>
+    <string name="save">Save</string>
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
+
+    <!--reused text strings-->
+    <string name="On">On</string>
+    <string name="Off">Off</string>
+    <string name="Yes">Yes</string>
+    <string name="No">Off</string>
+    <string name="DeleteMsg">The record has been deleted</string>
+    <string name="DeleteQuestion">Are you sure you want to delete this record?</string>
+    <string name="getEmail">Enter the recipient email address</string>
+    <string name="getSMS">Enter the recipient phone number</string>
+    <string name="addValueHint">Add value here</string>
+    <string name="addRecord">Input the value to be added</string>
+    <string name="addNote">Input the Note</string>
+    <string name="OK">OK</string>
+    <string name="invalid_date">Invalid date.  Input the date as MM/DD/YYYY</string>
+    <string name="due_date_msg">The due date for this assessment is</string>
+    <string name="deleteTerm">This term cannot be deleted because it has associated courses.  Delete the courses for this term and try again.</string>
+
+    <!--edittext hints-->
+    <string name="edit_title">Title</string>
+    <string name="edit_name">Name</string>
+    <string name="edit_start_date">Start Date: mm/dd/yyyy</string>
+    <string name="edit_end_date">End Date: mm/dd/yyyy</string>
+    <string name="edit_status">Status: </string>
+    <string name="edit_start_alert_label">Set Start Date Alert</string>
+    <string name="edit_end_alert_label">Set End Date Alert</string>
+    <string name="edit_goal_alert_label">Set Goal Date Alert</string>
+
+    <!--labels-->
+    <string name="start_date_label">START DATE:</string>
+    <string name="end_date_label">END DATE:</string>
+    <string name="due_date_label">DUE DATE:</string>
+    <string name="status_label">STATUS:</string>
+    <string name="share_label">SHARE TYPE:</string>
+    <string name="assess_type_label">ASSESSMENT TYPE:</string>
+    <string name="start_date_alert_status_label">START DATE ALERT:</string>
+    <string name="end_date_alert_status_label">END DATE ALERT:</string>
+    <string name="goal_date_alert_status_label">GOAL DATE ALERT:</string>
+
+    <!--arrays for spinners-->
+    <string-array name="assess_type">
+        <item>Performance</item>
+        <item>Objective</item>
+    </string-array>string-array>
+
+    <string-array name = "share_list">
+        <item>None</item>
+        <item>Email</item>
+    </string-array>
+
+    <string-array name="status_list">
+        <item>Current</item>
+        <item>Completed</item>
+        <item>Dropped</item>
+        <item>Future</item>
+    </string-array>
+
+
+</resources>

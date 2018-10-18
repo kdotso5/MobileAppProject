@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <TextView
+        android:id="@+id/note_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/note_memo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_layout"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/note_list_view"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <Button
+            android:id="@+id/shareButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/send"
+            android:onClick="sendNote"
+            android:clickable="false"
+            android:focusable="false"/>
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/delete"
+            android:onClick="deleteNote"
+            android:clickable="false"
+            android:focusable="false"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/note_list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:divider="@color/divider"
+        android:dividerHeight="1dp"
+        android:listSelector="@color/on_click"
+        android:scrollbars="vertical"
+        android:clickable="false"
+        android:focusable="false"
+        android:descendantFocusability="blocksDescendants"/>
+
+
+</RelativeLayout>
